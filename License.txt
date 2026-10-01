@@ -1,0 +1,33 @@
+Tokenoodle-Everything License
+
+Version: 1.0
+
+Copyright (c) 2026 Tokenoodle-Everything Organization
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, and sublicense the Software,
+subject to the following conditions:
+
+1. The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+2. THE SOFTWARE MAY NOT BE USED FOR ANY COMMERCIAL PURPOSE.
+Commercial purposes include, but are not limited to: selling the Software,
+using the Software within a paid service, monetizing products built upon the Software,
+using the Software for business revenue-generating activities, and integrating the Software
+into commercial products.
+
+3. This license is non-transferable. Any distribution of modified copies of the Software
+must use this exact license and retain this notice; you may not relicense the Software
+or modified derivatives under a different license.
+
+4. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+OR OTHER DEALINGS IN THE SOFTWARE.
+
+This is NOT an OSI-approved open source license.

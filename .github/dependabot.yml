@@ -1,0 +1,30 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "21:00"
+    versioning-strategy: increase
+    commit-message:
+      prefix: "deps"
+    open-pull-requests-limit: 6
+    labels:
+      - "deps"
+      - "deps-python"
+    allow:
+      - dependency-type: "all"
+    ignore:
+      - dependency-name: "pip"
+      - dependency-name: "setuptools"
+      - dependency-name: "wheel"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "21:00"
+    open-pull-requests-limit: 6
+    labels:
+      - "deps"
+      - "deps-github-actions"
