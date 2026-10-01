@@ -32,7 +32,7 @@
 ## 安装
 
 ```bash
-pip install memzero-train
+pip install mztrain
 ```
 
 就这样。`psutil` 是唯一运行时依赖（探测空闲内存），`numpy` 是唯一硬依赖。
