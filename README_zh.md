@@ -6,7 +6,6 @@
 
 [![Tests](https://img.shields.io/badge/测试-16%20项通过-brightgreen)]()
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)]()
-[![License](https://img.shields.io/badge/license-MIT-blue)]()
 [![仅 CPU](https://img.shields.io/badge/仅%20CPU-success)]()
 [![零上传](https://img.shields.io/badge/隐私-100%25%20本地-blueviolet)]()
 
@@ -139,9 +138,3 @@ parallel_train(8):   ~6.5x
 pip install -e .[dev]
 pytest tests/ -q
 ```
-
----
-
-## 许可证
-
-MIT —— 随便用，保留版权即可。
