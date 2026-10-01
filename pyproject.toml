@@ -39,7 +39,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=9.1.1", "ruff>=0.1"]
-torch = ["torch>=2.0"]
+torch = ["torch>=2.14.0"]
 
 [project.urls]
 Homepage = "https://github.com/tokenoodle-everything/mztrain"
