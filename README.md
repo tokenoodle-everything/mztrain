@@ -7,7 +7,6 @@
 
 [![Tests](https://img.shields.io/badge/tests-16%20passing-brightgreen)]()
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)]()
-[![License](https://img.shields.io/badge/license-MIT-blue)]()
 [![CPU only](https://img.shields.io/badge/CPU-only-success)]()
 [![Zero data upload](https://img.shields.io/badge/privacy-100%25%20local-blueviolet)]()
 

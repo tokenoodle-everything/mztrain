@@ -34,11 +34,11 @@ classifiers = [
 ]
 dependencies = [
     "numpy>=1.23",
-    "psutil>=5.9 ; sys_platform != 'linux-musl'",
+    "psutil>=7.2.2 ; sys_platform != 'linux-musl'",
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=7.0", "ruff>=0.16.9"]
+dev = ["pytest>=9.1.1", "ruff>=0.16.9"]
 torch = ["torch>=2.0"]
 
 [project.urls]
