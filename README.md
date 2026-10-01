@@ -33,7 +33,7 @@ transformer on a 2015 laptop with **< 300 MB** RSS — no GPU, no surprises.
 ## Installation
 
 ```bash
-pip install mztrain
+pip install memzero-train
 ```
 
 That's it.  `psutil` is the only runtime dependency (used for free-memory
