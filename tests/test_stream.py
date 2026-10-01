@@ -5,7 +5,7 @@ import gc
 import numpy as np
 
 import mztrain as mzt
-from mztrain.data import SyntheticDataset, circles, moons
+from mztrain.data import SyntheticDataset, moons
 from mztrain.data.stream import BatchIterableDataset
 
 

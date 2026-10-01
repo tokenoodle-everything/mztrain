@@ -1,7 +1,6 @@
 """Tests for mztrain.core.tensor."""
 
 import numpy as np
-import pytest
 
 from mztrain.core import Tensor
 
