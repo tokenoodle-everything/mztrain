@@ -2,3 +2,10 @@
 __pycache__/
 .pytest_cache/
 .ruff_cache/
+*.pyc
+*.egg-info/
+dist/
+build/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
