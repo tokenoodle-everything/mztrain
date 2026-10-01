@@ -6,7 +6,7 @@
 >
 > `import mztrain as mzt` —— 普通笔记本就能跑神经网络训练，不用显卡、不用大内存。
 
-[![Tests](https://img.shields.io/badge/测试-16%20项通过-brightgreen)]()
+[![Tests](https://img.shields.io/badge/测试-17%20项通过-brightgreen)]()
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)]()
 [![仅 CPU](https://img.shields.io/badge/仅%20CPU-success)]()
 [![零上传](https://img.shields.io/badge/隐私-100%25%20本地-blueviolet)]()
