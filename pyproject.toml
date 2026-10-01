@@ -34,7 +34,7 @@ classifiers = [
 ]
 dependencies = [
     "numpy>=1.23",
-    "psutil>=5.9 ; sys_platform != 'linux-musl'",
+    "psutil>=7.2.2 ; sys_platform != 'linux-musl'",
 ]
 
 [project.optional-dependencies]
