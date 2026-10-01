@@ -34,7 +34,7 @@ transformer on a 2015 laptop with **< 300 MB** RSS — no GPU, no surprises.
 ## Installation
 
 ```bash
-pip install memzero-train
+pip install mztrain
 ```
 
 That's it.  `psutil` is the only runtime dependency (used for free-memory
@@ -174,9 +174,3 @@ Run the test suite locally:
 pip install -e .[dev]
 pytest tests/ -q
 ```
-
----
-
-## License
-
-MIT — do what you want, just keep the copyright.

@@ -42,9 +42,9 @@ dev = ["pytest>=7.0", "ruff>=0.1"]
 torch = ["torch>=2.0"]
 
 [project.urls]
-Homepage = "https://github.com/tokenoodle-everything/memzero-train"
-Documentation = "https://github.com/tokenoodle-everything/memzero-train/blob/master/README.md"
-Issues = "https://github.com/tokenoodle-everything/memzero-train/issues"
+Homepage = "https://github.com/tokenoodle-everything/mztrain"
+Documentation = "https://github.com/tokenoodle-everything/mztrain/blob/master/README.md"
+Issues = "https://github.com/tokenoodle-everything/mztrain/issues"
 
 [tool.setuptools]
 packages = ["mztrain", "mztrain.core", "mztrain.data", "mztrain.models",
