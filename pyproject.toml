@@ -33,7 +33,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 dependencies = [
-    "numpy>=1.23",
+    "numpy>=2.2.6",
     "psutil>=7.2.2 ; sys_platform != 'linux-musl'",
 ]
 
