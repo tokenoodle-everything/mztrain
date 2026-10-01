@@ -1,6 +1,6 @@
 # memzero-train
 
-[中文README](README_zh.md)
+[中文README](https://github.com/tokenoodle-everything/mztrain/blob/master/README_zh.md)
 
 > **Zero-memory, multi-core CPU, local-first AI training for ordinary laptops.**
 >

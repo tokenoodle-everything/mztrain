@@ -1,5 +1,7 @@
 # memzero-train
 
+[English README](https://github.com/tokenoodle-everything/mztrain/blob/master/README.md)
+
 > **零内存、多核 CPU、本地优先的 AI 训练神器**
 >
 > `import mztrain as mzt` —— 普通笔记本就能跑神经网络训练，不用显卡、不用大内存。
