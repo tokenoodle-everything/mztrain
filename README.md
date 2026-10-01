@@ -1,11 +1,13 @@
 # memzero-train
 
+[中文README](README_zh.md)
+
 > **Zero-memory, multi-core CPU, local-first AI training for ordinary laptops.**
 >
 > `import mztrain as mzt` and train a neural net on your laptop without
 > a GPU and without your machine falling over.
 
-[![Tests](https://img.shields.io/badge/tests-16%20passing-brightgreen)]()
+[![Tests](https://img.shields.io/badge/tests-17%20passing-brightgreen)]()
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)]()
 [![CPU only](https://img.shields.io/badge/CPU-only-success)]()
 [![Zero data upload](https://img.shields.io/badge/privacy-100%25%20local-blueviolet)]()
