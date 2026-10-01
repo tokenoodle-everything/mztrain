@@ -1,9 +1,11 @@
 """Tests for streaming datasets."""
 
+import gc
+
 import numpy as np
 
 import mztrain as mzt
-from mztrain.data import moons, circles, SyntheticDataset
+from mztrain.data import SyntheticDataset, circles, moons
 from mztrain.data.stream import BatchIterableDataset
 
 
@@ -35,10 +37,28 @@ def test_synthetic_infinite():
         assert y in (0, 1)
 
 
+def test_construction_is_lazy():
+    """Constructing a 1M-row moons dataset should not allocate O(N) memory.
+
+    We measure RSS **before** any iteration; if the dataset were eager
+    (preallocating all rows) this would balloon to ~10 MB+.
+    """
+    gc.collect()
+    rss_before = mzt.process_rss_bytes()
+    ds = moons(1_000_000)  # 1 million rows requested
+    gc.collect()
+    rss_after_construct = mzt.process_rss_bytes()
+    # Allow some overhead for Python object, RNG state, etc. — but it
+    # MUST NOT scale with n_samples. 256 KB is generous.
+    growth = rss_after_construct - rss_before
+    assert growth < 256 * 1024, (
+        f"dataset construction allocated {growth} bytes — "
+        f"streaming datasets must not preallocate O(n_samples) memory"
+    )
+
+
 def test_memory_constant_with_stream():
     """A streaming dataset should not retain samples in memory after batch yield."""
-    import gc
-
     gc.collect()
     rss_before = mzt.process_rss_bytes()
     ds = moons(1_000_000)
@@ -46,7 +66,15 @@ def test_memory_constant_with_stream():
     it = iter(bds)
     for _ in range(50):  # 50 batches -> 1600 rows but dataset has 1M rows
         xb, yb = next(it)
+    # Drop references so the yielded batches can be collected.
+    del xb, yb, it, bds, ds
     gc.collect()
     rss_after = mzt.process_rss_bytes()
-    # Allow some growth but not linear in dataset size.
-    assert rss_after < rss_before + 50 * 1024 * 1024, f"RSS grew too much: {rss_before} -> {rss_after}"
+    # Allow OS allocator jitter on Windows / macOS (Python keeps freed
+    # pages in its heap). 10 MB is a *very* loose cap; for a 1M-row
+    # dataset preallocating in memory this would be ~80 MB+.
+    growth = rss_after - rss_before
+    assert growth < 10 * 1024 * 1024, (
+        f"RSS grew too much after streaming: {rss_before} -> {rss_after} "
+        f"(+{growth} bytes). Dataset is likely preallocating in memory."
+    )
