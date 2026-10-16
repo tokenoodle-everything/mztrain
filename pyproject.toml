@@ -38,7 +38,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=9.1.1", "ruff>=0.16.9"]
+dev = ["pytest>=9.1.1", "ruff>=0.17.0"]
 torch = ["torch>=2.14.1"]
 
 [project.urls]
